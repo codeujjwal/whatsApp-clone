@@ -1,0 +1,122 @@
+.chatting {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+.chat_header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.headerright {
+  padding-left: 30px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerIcons {
+  margin: -1px;
+}
+
+.headerInfo > h2 {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.headerInfo > p {
+  color: gray;
+  font-size: xx-small;
+}
+.chat_main {
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  flex: 1;
+  padding: 20px 0px;
+  background-repeat: repeat;
+  background-position: center;
+  overflow: scroll;
+}
+.chat_main::-webkit-scrollbar {
+  display: none;
+}
+
+.chat_msg {
+  background-color: white;
+  min-width: 80px;
+  max-width: 600px;
+  border-radius: 4px;
+  margin-left: 25px;
+  padding: 7px;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.chat_name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+.chat_timestamp {
+  position: absolute;
+  bottom: -15px;
+  margin-left: 14px;
+  font-size: xx-small;
+}
+.chat_reciever {
+  margin-left: auto;
+
+  margin-right: 25px;
+  background-color: #dcf8c6;
+}
+
+.chat_footer {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+.chat_footer > form {
+  display: flex;
+  flex: 1;
+}
+.chat_footer > form > input:focus {
+  border: none;
+  outline: none;
+}
+.chat_footer > form > input {
+  display: flex;
+  flex: 1;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+.chat_footer > form > button > .MuiSvgIcon-root {
+  display: grid;
+  margin: 0px 2px;
+  place-items: center;
+  background-color: #088483;
+  border-radius: 50px;
+  color: white;
+  padding: 6px;
+}
+button {
+  border: none;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.chat_footer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 6px;
+}
