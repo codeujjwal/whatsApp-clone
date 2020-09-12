@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Chat from "./components/Chat/Chat";
@@ -7,7 +7,7 @@ import Login from "./components/Login/Login";
 import { useStateValue } from "./ContextAPI/StateProvider";
 
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   return (
     <div className="App">
       {!user ? (

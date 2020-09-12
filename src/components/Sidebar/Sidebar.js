@@ -11,7 +11,7 @@ import { useStateValue } from "../../ContextAPI/StateProvider";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     db.collection("Rooms").onSnapshot((snapshot) =>

@@ -13,7 +13,7 @@ import db from "../../firebase";
 import { useStateValue } from "../../ContextAPI/StateProvider";
 
 function Chat() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const [input, setInput] = useState("");
   const [seed, setSeed] = useState("");
   const [roomName, setRoomName] = useState("");

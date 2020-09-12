@@ -5,7 +5,7 @@ import { useStateValue } from "../../ContextAPI/StateProvider";
 import { actionTypes } from "../../ContextAPI/reducer";
 
 function Login() {
-  const [{}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
   const SignIn = () => {
     auth
@@ -21,7 +21,10 @@ function Login() {
   return (
     <div className="login">
       <div className="login_container">
-        <img src="https://image.flaticon.com/icons/svg/733/733585.svg"></img>
+        <img
+          src="https://image.flaticon.com/icons/svg/733/733585.svg"
+          alt="logo"
+        ></img>
         <h2>Sign in to WhatsApp</h2>
         <button onClick={SignIn}>SIGN IN WITH GOOGLE</button>
       </div>

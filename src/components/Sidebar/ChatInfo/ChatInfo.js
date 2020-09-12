@@ -3,7 +3,6 @@ import { Avatar } from "@material-ui/core";
 import "./Chatinfo.css";
 import db from "../../../firebase";
 import { Link } from "react-router-dom";
-import { useStateValue } from "../../../ContextAPI/StateProvider";
 
 function Chat({ addNewChat, id, name }) {
   const [seed, setSeed] = useState("");
